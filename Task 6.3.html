@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <style>
+		#cars{
+		  display:flex;
+		  flex-wrap:wrap;
+		}
+		.card{
+		  position:relative;
+		  width:150px;
+		  margin:5px;
+		  font-size: 120%;
+
+		}
+
+		.card .basket{
+			display: block;
+		  background-color:white;
+		  position:absolute;
+		  right:5px;
+		  top:5px;
+		  z-index:9;
+		  height: 20px;
+		  border-radius: 3px;
+		}
+		#insideBasket{
+		  border:1px solid red;
+		  text-align:center;
+		}
+		 #otm0{
+			display: none;
+			background-color:white;
+			  position:absolute;
+			  right:5px;
+			  top:5px;
+			  z-index:9;
+			  height: 20px;
+			  border-radius: 3px;
+		}
+		 #otm1{
+			display: none;
+			background-color:white;
+			  position:absolute;
+			  right:5px;
+			  top:5px;
+			  z-index:9;
+			  height: 20px;
+			  border-radius: 3px;
+		} #otm2{
+			display: none;
+			background-color:white;
+			  position:absolute;
+			  right:5px;
+			  top:5px;
+			  z-index:9;
+			  height: 20px;
+			  border-radius: 3px;
+		}
+	</style>
+    <script src="w7t3.js" defer></script>
+  </head>
+
+  <body>
+    <div id="insideBasket"><span id="items">0</span> items, total: <span id="sum">0</span>$</div>
+    <div id="cars">
+
+
+    	<div class="card">
+
+    		<img id='s0' style="width: 150px;height: 100px;" src="">
+    		
+    		<p id=nam0></p>
+    		
+    		<div class="basket">
+    			<div id='kup0' onclick="buy0()"><img style="width: 20px;height: 20px;" src="dol.png" ></div>
+    		</div>
+    		
+    			<div id='otm0' onclick="ne0()"><img style="width: 20px;height: 20px;" src="g.png"></div>
+
+
+
+
+    	</div>
+
+    	<div class="card">
+
+    		<img id='s1' style="width: 150px;height: 100px;" src="">
+
+    		<p id='nam1'></p>
+
+    		<div class="basket">
+    			<div id='kup1'  onclick="buy1()"><img style="width: 20px;height:20px;" src="dol.png"></div>
+
+    		</div>
+    			<div id='otm1' onclick="ne1()"><img style="width: 20px;height: 20px;" src="g.png"></div>
+
+
+    	</div>
+
+
+
+
+
+
+
+    	<div class="card">
+
+    		<img id='s2' style="width: 150px;height: 100px;" src="">
+
+    		
+    		 <p id='nam2'></p>
+    		
+    		 <div class="basket">
+    		 	<div id='kup2' onclick="buy2()"><img style="width: 20px;height: 20px;" src="dol.png"></div>
+    		 </div>
+    		 	<div id='otm2' onclick="ne2()"><img style="width: 20px;height: 20px;" src="g.png"></div>
+
+    		</div>
+
+
+
+
+
+
+
+
+    	
+    	
+   
+      	
+    
+    </div>
+  </body>
+
+</html>
